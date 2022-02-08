@@ -1,3 +1,5 @@
+import 'bootstrap/dist/css/bootstrap.min.css'
+import './styles/index.css'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
@@ -7,10 +9,12 @@ import Logement from './pages/Logement'
 import EnTete from './composants/EnTete'
 import PiedDePage from './composants/PiedDePage'
 import Erreur404 from './composants/Erreur404'
+import Disposition from './composants/Disposition'
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
+      <Disposition>
       <EnTete />
       <Routes>
         <Route exact path="/" element={<Accueil />} />
@@ -19,6 +23,7 @@ ReactDOM.render(
         <Route path="*" element={<Erreur404 />} />
       </Routes>
       <PiedDePage />
+      </Disposition>
     </Router>
   </React.StrictMode>,
   document.getElementById('root')

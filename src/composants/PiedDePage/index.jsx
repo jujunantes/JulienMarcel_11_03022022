@@ -1,7 +1,9 @@
 import styled from 'styled-components'
 
 const LogoFooter = styled.img`
-  height: 60px;
+  height: 40px;
+  width: 122px;
+  margin-bottom: 28px;
 `
 
 const Footer = styled.footer`
@@ -9,10 +11,15 @@ const Footer = styled.footer`
     display: flex;
     color: white;
     background-color: black;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 60px;
+    padding-top: 66px;
+    padding-bottom: 29px;
+`
+
+const PFooter = styled.p`
+    font-size: 24px;
 `
 
 function PiedDePage() {
@@ -20,7 +27,7 @@ function PiedDePage() {
     <Footer>
         <LogoFooter src={require('../../medias/LogoPiedDePage.png')} />
         <div>
-            <p>© 2022 Kasa. All rights reserved</p>
+            <PFooter>© 2022 Kasa. All rights reserved</PFooter>
         </div>
     </Footer>
     )

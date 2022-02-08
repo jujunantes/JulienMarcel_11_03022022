@@ -6,7 +6,8 @@ const LogoStyle = styled.img`
 `
 
 const ConteneurNavigation = styled.nav`
-  padding: 30px;
+  margin-top: 40px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,8 +17,10 @@ const LienStylise = {
     padding : "10px 15px",
     color: "#ff6060",
     textDecoration: "none",
-    fontSize: "34px",
-    textAlign: "center"
+    fontSize: "24px",
+    fontWeight: "500",
+    textAlign: "center",
+    marginLeft: "30px"
   }
 
 function EnTete() {
