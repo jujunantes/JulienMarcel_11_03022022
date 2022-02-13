@@ -11,6 +11,8 @@ import PiedDePage from './composants/PiedDePage'
 import Erreur404 from './composants/Erreur404'
 import Disposition from './composants/Disposition'
 
+window.mesLogements = []
+
 ReactDOM.render(
   <React.StrictMode>
     <Router>
@@ -20,6 +22,7 @@ ReactDOM.render(
         <Route exact path="/" element={<Accueil />} />
         <Route path="/apropos" element={<APropos />} />
         <Route path="/logement" element={<Logement />} />
+        <Route path="/logement/:indexLogement" element={<Logement />} />
         <Route path="*" element={<Erreur404 />} />
       </Routes>
       <PiedDePage />
