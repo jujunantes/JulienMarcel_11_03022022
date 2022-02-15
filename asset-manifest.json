@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/JulienMarcel_11_03022022/static/css/main.65ab717e.css",
+    "main.js": "/JulienMarcel_11_03022022/static/js/main.1026b5fd.js",
+    "static/media/JumbotronAPropos.png": "/JulienMarcel_11_03022022/static/media/JumbotronAPropos.391c8917025e1a045c25.png",
+    "static/media/JumbotronAccueil.png": "/JulienMarcel_11_03022022/static/media/JumbotronAccueil.628101287a7608cec0f2.png",
+    "index.html": "/JulienMarcel_11_03022022/index.html",
+    "static/media/chevron-right.svg": "/JulienMarcel_11_03022022/static/media/chevron-right.f5d8c79f97e83ab55764.svg",
+    "static/media/chevron-left.svg": "/JulienMarcel_11_03022022/static/media/chevron-left.19918a1634b1441a25ae.svg",
+    "static/media/etoile-checked.svg": "/JulienMarcel_11_03022022/static/media/etoile-checked.9a47525e855981dbf427.svg",
+    "static/media/etoile.svg": "/JulienMarcel_11_03022022/static/media/etoile.9884745cc92ab0b3b1b3.svg",
+    "main.65ab717e.css.map": "/JulienMarcel_11_03022022/static/css/main.65ab717e.css.map",
+    "main.1026b5fd.js.map": "/JulienMarcel_11_03022022/static/js/main.1026b5fd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.65ab717e.css",
+    "static/js/main.1026b5fd.js"
+  ]
+}
