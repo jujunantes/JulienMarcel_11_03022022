@@ -1,12 +1,11 @@
 import Banniere from '../../composants/Banniere'
 import Carte from '../../composants/Carte'
-import { Logement } from '../../utils/logement.js'
+import { unLogement } from '../../utils/logement.js'
 import donnees from './logements.json'
-
 
 function chargeLogements()  {
       for (const logement of donnees.logements) {
-        window.mesLogements.push( new Logement(logement.id, logement.title, logement.cover, logement.pictures, logement.description, logement.host, logement.rating, logement.location, logement.equipements, logement.tags))
+        window.mesLogements.push( new unLogement(logement.id, logement.title, logement.cover, logement.pictures, logement.description, logement.host, logement.rating, logement.location, logement.equipements, logement.tags))
       }
 }
 

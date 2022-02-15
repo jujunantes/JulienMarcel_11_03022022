@@ -8,13 +8,6 @@
     display: none;
 }
 
-/*
-*
-* ==========================================
-* CUSTOM UTIL CLASSES
-* ==========================================
-*
-*/
 .collapsible-link {
     width: 100%;
     position: relative;
@@ -68,6 +61,28 @@
     height: 100%;
 }
 
+.styleCarousel {
+    border-radius: 25px;
+}
+.stylePhotosCarousel {
+    border-radius: 25px;
+    display: block;
+    object-fit: cover;
+    height: 415px;
+}
+
+.carousel-control-next-icon{
+    background-image : url('../medias/chevron-right.svg');
+    width: 47px;
+    height: 80px;
+}
+.carousel-control-prev-icon{
+  background-image : url('../medias/chevron-left.svg');
+  width: 47px;
+  height: 80px;
+}
+
+
 .stylePhotosLogement:hover,
 .stylePhotosLogement:focus {
   transform: scale(1.05);
@@ -84,4 +99,38 @@
     left: 3rem;
     width: 40%;
     color: white;
+}
+
+.conteneurCarousel {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.numeroImage {
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+}
+
+.etoile-checked {
+    width: 30px;
+    height: 30px;
+    background-image: url('../medias/etoile-checked.svg');
+    display: block;
+}
+
+.etoile {
+    width: 30px;
+    height: 30px;
+    background-image: url('../medias/etoile.svg');
+    display: block;
+}
+
+.stylePhotosNom {
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
 }

@@ -5,7 +5,7 @@ class Host {
     }
 }
 
-class Logement {
+class unLogement {
 
     constructor(id, title, cover, pictures, description, host, rating, location, equipements, tags) {
         this.id = null ?? id
@@ -21,4 +21,4 @@ class Logement {
     }
 }
 
-export { Host, Logement }
+export { Host, unLogement }
