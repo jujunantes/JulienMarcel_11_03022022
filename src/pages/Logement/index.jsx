@@ -1,6 +1,7 @@
 import { useParams, Navigate  } from 'react-router-dom'
 import CarouselLogement from '../../composants/CarouselLogement'
 import InfosMediumLogement from '../../composants/InfosMediumLogement'
+import InfosBasLogement from '../../composants/InfosBasLogement'
 import { unLogement } from '../../utils/logement.js'
 import donnees from '../Accueil/logements.json'
 
@@ -14,7 +15,7 @@ function Logement() {
   }
   if (window.mesLogements.length === 0) { // Pour le cas où l'on arrive sur cette page par lien direct (les données n'ont alors pas été chargées)
     for (const logement of donnees.logements) {
-      window.mesLogements.push( new unLogement(logement.id, logement.title, logement.cover, logement.pictures, logement.description, logement.host, logement.rating, logement.location, logement.equipements, logement.tags))
+      window.mesLogements.push( new unLogement(logement.id, logement.title, logement.cover, logement.pictures, logement.description, logement.host, logement.rating, logement.location, logement.equipments, logement.tags))
     }
   }
     
@@ -22,6 +23,7 @@ function Logement() {
     <div>
       <CarouselLogement index={indexLogement} />
       <InfosMediumLogement index={indexLogement} />
+      <InfosBasLogement index={indexLogement} />
     </div>
   )
 }

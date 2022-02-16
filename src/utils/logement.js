@@ -6,8 +6,7 @@ class Host {
 }
 
 class unLogement {
-
-    constructor(id, title, cover, pictures, description, host, rating, location, equipements, tags) {
+    constructor(id, title, cover, pictures, description, host, rating, location, equipments, tags) {
         this.id = null ?? id
         this.title = null ?? title
         this.cover = null ?? cover
@@ -16,7 +15,7 @@ class unLogement {
         this.host = null ?? Object.assign({}, {name:host.name, picture: host.picture})
         this.rating = null ?? rating
         this.location = null ?? location
-        this.equipements = null ?? equipements
+        this.equipments = null ?? equipments
         this.tags = null ?? tags
     }
 }

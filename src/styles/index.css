@@ -82,6 +82,15 @@
   height: 80px;
 }
 
+.carousel-control-next:hover,
+.carousel-control-prev:hover {
+    filter: drop-shadow(16px 16px 20px #ff6060) brightness(80%) contrast(200%);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    opacity: 1;
+}
 
 .stylePhotosLogement:hover,
 .stylePhotosLogement:focus {
@@ -120,6 +129,7 @@
     height: 30px;
     background-image: url('../medias/etoile-checked.svg');
     display: block;
+    margin-left: 10px;
 }
 
 .etoile {
@@ -127,10 +137,104 @@
     height: 30px;
     background-image: url('../medias/etoile.svg');
     display: block;
+    margin-left: 10px;
 }
 
 .stylePhotosNom {
     width: 64px;
     height: 64px;
     border-radius: 32px;
+}
+
+.conteneurInfosMediumLogement {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.conteneurInfosMediumLogementGauche,
+.conteneurInfosMediumLogementDroite {
+    display: flex;
+    flex-direction: column;
+    color: #ff6060;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.InfosMediumLogementTitre {
+    font-size: 36px;
+    line-height: 142.6%;
+}
+
+.InfosMediumLogementEndroit {
+    font-size: 18px;
+    line-height: 142.6%;
+}
+
+.InfosMediumLogementTags {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    /*justify-content: space-between;*/
+}
+
+.styleTag {
+    background: #ff6060;
+    color: white;
+    font-size: 14px;
+    line-height: 142.6%;
+    border-radius: 10px;
+    padding: 4px 40px;
+    margin-right: 10px;
+}
+
+.conteneurInfosMediumLogementEtoiles {
+    display: flex;
+    flex-direction: row;
+}
+
+.conteneurInfosMediumLogementNom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    font-size: 18px;
+    line-height: 142.6%;
+    position: relative;
+}
+
+.conteneurInfosMediumLogementNomPhoto {
+    display: flex;
+    flex-direction: row;
+}
+
+.conteneurInfosMediumLogementPhoto {
+    margin-left: 10px;
+    position: relative;
+    top: -8px;
+    margin-right: 0px;
+    padding-right: 0px;
+}
+
+.conteneurInfosBasLogement {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.styleEquipement {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 100%;
+}
+
+.styleBoutonLogement {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px !important;
+    padding: 13px 20px;
 }

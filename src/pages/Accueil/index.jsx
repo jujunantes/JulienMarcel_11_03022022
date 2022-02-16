@@ -5,7 +5,7 @@ import donnees from './logements.json'
 
 function chargeLogements()  {
       for (const logement of donnees.logements) {
-        window.mesLogements.push( new unLogement(logement.id, logement.title, logement.cover, logement.pictures, logement.description, logement.host, logement.rating, logement.location, logement.equipements, logement.tags))
+        window.mesLogements.push( new unLogement(logement.id, logement.title, logement.cover, logement.pictures, logement.description, logement.host, logement.rating, logement.location, logement.equipments, logement.tags))
       }
 }
 
