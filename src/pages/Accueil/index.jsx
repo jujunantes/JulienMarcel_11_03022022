@@ -13,7 +13,7 @@ function Accueil() {
   if (window.mesLogements.length === 0) chargeLogements()
   return (
     <div className="App">
-      <Banniere image='JumbotronAccueil'/>
+      <Banniere image='banniereAccueil' texte='Chez vous, partout et ailleurs' />
       <div className="row gx-5 d-sm-flex conteneurLogements" >
         {window.mesLogements.map((logement, index) => (
           <Carte lien={logement.cover} titre={logement.title} index={index} key={index}/>

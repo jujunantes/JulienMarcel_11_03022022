@@ -19,7 +19,7 @@ ReactDOM.render(
       <Disposition>
       <EnTete />
       <Routes>
-        <Route exact path="/" element={<Accueil />} />
+        <Route path="/" element={<Accueil />} />
         <Route path="/apropos" element={<APropos />} />
         <Route path="/logement" element={<Logement />} />
         <Route path="/logement/:indexLogement" element={<Logement />} />

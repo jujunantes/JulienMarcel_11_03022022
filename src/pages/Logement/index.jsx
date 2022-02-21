@@ -10,7 +10,7 @@ function Logement() {
   const indexLogementInt = parseInt(indexLogement)
   if((indexLogementInt < 0) || (indexLogementInt > 19)) { // Si chemin impossible, on revient à l'accueil avant d'aller plus loin
     return (
-      <Navigate to="/" />
+      <Navigate to="404" />
     )
   }
   if (window.mesLogements.length === 0) { // Pour le cas où l'on arrive sur cette page par lien direct (les données n'ont alors pas été chargées)
