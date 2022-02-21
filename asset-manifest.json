@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/JulienMarcel_11_03022022/static/css/main.bafdb454.css",
-    "main.js": "/JulienMarcel_11_03022022/static/js/main.cee019c2.js",
-    "static/media/JumbotronAPropos.png": "/JulienMarcel_11_03022022/static/media/JumbotronAPropos.391c8917025e1a045c25.png",
-    "static/media/JumbotronAccueil.png": "/JulienMarcel_11_03022022/static/media/JumbotronAccueil.628101287a7608cec0f2.png",
+    "main.css": "/JulienMarcel_11_03022022/static/css/main.86517eac.css",
+    "main.js": "/JulienMarcel_11_03022022/static/js/main.313e1d16.js",
+    "static/media/banniereAPropos.png": "/JulienMarcel_11_03022022/static/media/banniereAPropos.2a77a932772e43760413.png",
+    "static/media/banniereAccueil.png": "/JulienMarcel_11_03022022/static/media/banniereAccueil.508410658f3b84ae9a9e.png",
     "index.html": "/JulienMarcel_11_03022022/index.html",
     "static/media/chevron-right.svg": "/JulienMarcel_11_03022022/static/media/chevron-right.eeb4aaea40dacce37d13.svg",
     "static/media/chevron-left.svg": "/JulienMarcel_11_03022022/static/media/chevron-left.4fba95635b7340d10641.svg",
     "static/media/etoile-checked.svg": "/JulienMarcel_11_03022022/static/media/etoile-checked.9a47525e855981dbf427.svg",
     "static/media/etoile.svg": "/JulienMarcel_11_03022022/static/media/etoile.9884745cc92ab0b3b1b3.svg",
-    "main.bafdb454.css.map": "/JulienMarcel_11_03022022/static/css/main.bafdb454.css.map",
-    "main.cee019c2.js.map": "/JulienMarcel_11_03022022/static/js/main.cee019c2.js.map"
+    "main.86517eac.css.map": "/JulienMarcel_11_03022022/static/css/main.86517eac.css.map",
+    "main.313e1d16.js.map": "/JulienMarcel_11_03022022/static/js/main.313e1d16.js.map"
   },
   "entrypoints": [
-    "static/css/main.bafdb454.css",
-    "static/js/main.cee019c2.js"
+    "static/css/main.86517eac.css",
+    "static/js/main.313e1d16.js"
   ]
 }
