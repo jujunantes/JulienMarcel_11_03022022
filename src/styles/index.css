@@ -33,6 +33,7 @@
 .conteneurLogements {
     background: #F7F7F7;
     border-radius: 25px;
+    margin-top: 3rem;
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom : 56px;
@@ -50,7 +51,7 @@
 .carteLogement:after {
     content: "";
     display: block;
-    /*padding-bottom: 33%;*/
+    padding-bottom: 33%;
   }
 
 .stylePhotosLogement {
@@ -178,7 +179,6 @@
     display: flex;
     flex-direction: row;
     margin-top: 20px;
-    /*justify-content: space-between;*/
 }
 
 .styleTag {
@@ -257,7 +257,7 @@
     height: 249px;
 }
 
-a { padding : 10px 15px;
+.aEnTete { padding : 10px 15px;
     color: #ff6060;
     text-decoration: none;
     font-size: 24px;
@@ -265,11 +265,11 @@ a { padding : 10px 15px;
     text-align: center;
     margin-left: 30px;
 }
-a.active {
+.aEnTete.active {
     text-decoration-line: underline;
 }
 
-a:hover {
+.aEnTete:hover {
     color: #ff6060;
     filter: brightness(150%);
   }
@@ -284,12 +284,10 @@ a:hover {
 
 .LogoStyle {
     height: 70px;
-    margin-left: -40px;
 }
 
 .divBanniere {
   width: 100%;
-  margin-bottom: 47px;
   position: relative;
   text-align: center;
   color: white;
@@ -300,7 +298,8 @@ a:hover {
   line-height: 142.6%;
 }
 
-.imageBanniere {
+.banniereAccueil,
+.banniereAPropos {
     width: 100%;
     border-radius: 25px;
     filter: brightness(70%);
@@ -319,7 +318,7 @@ a:hover {
     display: block;
     margin-left: 8rem;
     margin-right: 8rem;
-    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 .CollapseAProposStyleBouton {
@@ -455,7 +454,7 @@ a:hover {
     .ConteneurNavigation {
         margin-top: 0;
     }
-    .imageBanniere {
+    .banniereAccueil {
         border-radius: 10px;
         height: 100%;
         object-fit: cover;
@@ -463,24 +462,30 @@ a:hover {
         height: 100%;
     }
 
+    .banniereAPropos {
+        border-radius: 10px;
+        height: 100%;
+        object-fit: cover;
+        min-height: 111px;
+        height: 223px;
+    }
+
     .divBanniere {
-        /*height: 111px;*/
         font-size: 24px;
         line-height: 100%;
     }
 
     .texteCentre {
-        width: 60%;
-        left: 35%;
+        width: 63%;
+        left: 40%;
         text-align: left;
       }
 
     .LogoStyle {
         height: 48px;
-        margin-left: -10px;
     }
 
-    a {
+    .aEnTete {
         text-transform: uppercase;
         font-size: 12px;
         margin-left: 0px;
@@ -492,13 +497,18 @@ a:hover {
         margin-left: 0px;
         margin-right: 0px;
         margin-bottom : 56px;
-        margin-top: -4rem;
+        margin-top: 0.5rem;
         padding: unset;
     }
 
     .carteLogement {
         padding: unset;
+        height: 255px;
     }
+
+    .carteLogement:after {
+        padding-bottom: unset;
+      }
 
     .mt-5 {
         margin-top: 1rem! important;
