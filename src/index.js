@@ -23,7 +23,7 @@ ReactDOM.render(
         <Route path="/apropos" element={<APropos />} />
         <Route path="/logement" element={<Logement />} />
         <Route path="/logement/:indexLogement" element={<Logement />} />
-        {/*<Route path="*" element={<Erreur404 />} />*/}
+        <Route path="*" element={<Erreur404 />} />
       </Routes>
       <PiedDePage />
       </Disposition>
