@@ -7,8 +7,8 @@ function EnTete() {
             <img className='LogoStyle' src={require('../../medias/LogoKasa.png')} alt='logo de Kasa' />
         </Link>
         <div>
-            <NavLink activeClassName="active" to='/' className='aEnTete'>Accueil</NavLink >
-            <NavLink activeClassName="active" to='/apropos' className='aEnTete'>A Propos</NavLink >
+            <NavLink className="active" to='/' className='aEnTete'>Accueil</NavLink >
+            <NavLink className="active" to='/apropos' className='aEnTete'>A Propos</NavLink >
         </div>
     </div>
     )

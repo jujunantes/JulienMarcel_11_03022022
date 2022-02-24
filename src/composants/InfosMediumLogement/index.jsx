@@ -1,18 +1,17 @@
 function InfosMediumLogement(props) {
-    const indexLogementInt = parseInt(props.index)
-    const nombreEtoiles = window.mesLogements[indexLogementInt].rating
-    const nomPrenom = window.mesLogements[indexLogementInt].host.name.split(/(?<=^\S+)\s/)
+    const nombreEtoiles = props.enrLogement.rating
+    const nomPrenom = props.enrLogement.host.name.split(/(?<=^\S+)\s/)
     return (
         <div className='conteneurInfosMediumLogement'>
             <div className="conteneurInfosMediumLogementGauche col col-lg-7">
                 <div className="InfosMediumLogementTitre">
-                    {window.mesLogements[indexLogementInt].title}
+                    {props.enrLogement.title}
                 </div>
                 <div className="InfosMediumLogementEndroit">
-                    {window.mesLogements[indexLogementInt].location}
+                    {props.enrLogement.location}
                 </div>
                 <div className="InfosMediumLogementTags">
-                    {window.mesLogements[indexLogementInt].tags.map((tag,index) => {
+                    {props.enrLogement.tags.map((tag,index) => {
                         return (
                             <span key={index} className="styleTag">
                                 {tag}
@@ -30,8 +29,8 @@ function InfosMediumLogement(props) {
                     <div className="conteneurInfosMediumLogementPhoto">
                         <img
                             className="stylePhotosNom"
-                            src={window.mesLogements[indexLogementInt].host.picture}
-                            alt={window.mesLogements[indexLogementInt].title + '- propriétaire : ' + window.mesLogements[indexLogementInt].host.name}
+                            src={props.enrLogement.host.picture}
+                            alt={props.enrLogement.title + '- propriétaire : ' + props.enrLogement.host.name}
                             />
                     </div>
                 </div>

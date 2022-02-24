@@ -21,7 +21,6 @@ ReactDOM.render(
       <Routes>
         <Route path="/" element={<Accueil />} />
         <Route path="/apropos" element={<APropos />} />
-        <Route path="/logement" element={<Logement />} />
         <Route path="/logement/:indexLogement" element={<Logement />} />
         <Route path="*" element={<Erreur404 />} />
       </Routes>

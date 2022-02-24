@@ -2,28 +2,30 @@ import { useParams, Navigate  } from 'react-router-dom'
 import CarouselLogement from '../../composants/CarouselLogement'
 import InfosMediumLogement from '../../composants/InfosMediumLogement'
 import InfosBasLogement from '../../composants/InfosBasLogement'
-import { unLogement } from '../../utils/logement.js'
-import donnees from '../Accueil/logements.json'
+import { useFetch } from '../../utils/hooks'
 
 function Logement() {
   const { indexLogement } = useParams()
   const indexLogementInt = parseInt(indexLogement)
-  if((indexLogementInt < 0) || (indexLogementInt > 19)) { // Si chemin impossible, on revient à l'accueil avant d'aller plus loin
+
+  const { donnees, isLoading, erreur } = useFetch('../logements.json', indexLogementInt)
+  if(erreur) { // Si chemin impossible, on revient à l'accueil avant d'aller plus loin
     return (
       <Navigate to="404" />
     )
   }
-  if (window.mesLogements.length === 0) { // Pour le cas où l'on arrive sur cette page par lien direct (les données n'ont alors pas été chargées)
-    for (const logement of donnees.logements) {
-      window.mesLogements.push( new unLogement(logement.id, logement.title, logement.cover, logement.pictures, logement.description, logement.host, logement.rating, logement.location, logement.equipments, logement.tags))
-    }
-  }
     
   return (
     <div>
-      <CarouselLogement index={indexLogement} />
-      <InfosMediumLogement index={indexLogement} />
-      <InfosBasLogement index={indexLogement} />
+      {isLoading ? (
+        <div>Chargement des données…</div>
+      ) : (
+        <div>
+      <CarouselLogement enrLogement={donnees} />
+      <InfosMediumLogement enrLogement={donnees} />
+      <InfosBasLogement enrLogement={donnees} />
+      </div>
+      )}
     </div>
   )
 }
