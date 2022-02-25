@@ -17,9 +17,9 @@ function CollapseInfosLogement(props) {
                 </Button>
                 <Collapse in={!open} >
                     <div style={{padding: "0"}}> {/* Nécessaire sinon le collapse est saccadé */}
-                        <p className="StyleTexteCollapseInfosLogement" >
+                        <div className="StyleTexteCollapseInfosLogement" >
                             {props.texte}
-                        </p>
+                        </div>
                     </div>
                 </Collapse>
             </div>

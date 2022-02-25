@@ -6,7 +6,7 @@ function Accueil() {
 
   const { donnees, isLoading, erreur } = useFetch('logements.json')
   if (erreur) {
-    return <div>Une erreur s'est produite !</div>;
+    return <div>Une erreur s'est produite ! {erreur}</div>;
   }
 
   return (

@@ -1,7 +1,6 @@
 {
   "name": "kasa",
   "version": "0.1.0",
-  "homepage": "https://jujunantes.github.io/JulienMarcel_11_03022022/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.2",

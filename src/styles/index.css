@@ -229,7 +229,7 @@
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
-    line-height: 100%;
+    line-height: 142.6%;
 }
 
 .styleBoutonLogement {
@@ -255,6 +255,8 @@
     border-bottom-right-radius: 10px;
     margin-top: -10px;
     height: 249px;
+    line-height: 142.6%;
+    overflow: hidden;
 }
 
 .aEnTete { padding : 10px 15px;
